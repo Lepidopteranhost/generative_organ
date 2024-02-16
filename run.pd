@@ -32,6 +32,8 @@
 #X msg 291 380 1;
 #X obj 79 413 s rand_gen;
 #X obj 233 181 r rand_gen;
+#X text 316 560 TO ADD HERE: add or subtract from the given number. Outlet as well.;
+#X floatatom 148 561 5 0 0 0 - - - 0;
 #X connect 0 0 21 0;
 #X connect 1 0 6 0;
 #X connect 1 0 9 0;
