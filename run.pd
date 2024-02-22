@@ -58,6 +58,9 @@
 #X obj 844 279 r tonicnum;
 #X obj 827 470 outlet;
 #X obj 273 303 + 5;
+#X obj 273 327 s octave_spill;
+#X obj 672 352 r octave_spill;
+#X obj 753 380 +;
 #X connect 0 0 36 0;
 #X connect 0 0 42 0;
 #X connect 1 0 6 0;
@@ -115,7 +118,10 @@
 #X connect 52 0 39 0;
 #X connect 53 0 0 0;
 #X connect 54 0 55 0;
-#X connect 56 0 40 1;
 #X connect 56 0 48 1;
+#X connect 56 0 61 1;
 #X connect 58 0 2 1;
 #X connect 58 0 12 0;
+#X connect 58 0 59 0;
+#X connect 60 0 61 0;
+#X connect 61 0 40 1;

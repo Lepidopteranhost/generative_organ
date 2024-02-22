@@ -41,7 +41,7 @@
 #X obj 106 440 s organ_out;
 #X obj 609 213 r organ_out;
 #X floatatom 295 180 5 0 0 0 - - - 0;
-#X obj 190 57 loadbang;
+#X obj 190 34 loadbang;
 #X obj 269 169 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 278 220 delay;
 #X obj 278 244 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -50,10 +50,12 @@
 #X obj 246 288 s change_pack;
 #X obj 49 357 r change_pack;
 #X obj 295 156 - 10;
+#X msg 190 58 150;
+#X msg 233 60 7;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
-#X connect 2 0 0 1;
 #X connect 2 0 46 0;
+#X connect 2 0 0 1;
 #X connect 3 0 0 2;
 #X connect 4 0 8 0;
 #X connect 4 0 39 0;
@@ -73,7 +75,8 @@
 #X connect 33 0 34 0;
 #X connect 36 0 29 0;
 #X connect 37 0 40 1;
-#X connect 38 0 2 0;
+#X connect 38 0 47 0;
+#X connect 38 0 48 0;
 #X connect 39 0 40 0;
 #X connect 39 0 42 0;
 #X connect 39 0 44 0;
@@ -84,3 +87,5 @@
 #X connect 43 0 31 1;
 #X connect 45 0 31 0;
 #X connect 46 0 37 0;
+#X connect 47 0 2 0;
+#X connect 48 0 3 0;
