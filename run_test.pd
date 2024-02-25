@@ -1,4 +1,4 @@
-#N canvas 1363 0 1366 685 12;
+#N canvas 4 5 1366 685 12;
 #X obj 170 122 run, f 7;
 #X obj 153 86 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X floatatom 190 83 5 0 0 0 - - - 0;
@@ -10,8 +10,8 @@
 #X coords 0 30 7 50 200 50 1 0 0;
 #X restore 408 118 graph;
 #X obj 411 36 loadbang;
-#X floatatom 170 193 5 0 0 0 - - - 0;
-#X obj 170 169 tabread array;
+#X floatatom 170 281 5 0 0 0 - - - 0;
+#X obj 170 257 tabread array;
 #X msg 411 61 \; array read noterun.txt;
 #X obj 397 217 vradio 19 1 0 8 empty empty Octave 0 -10 0 12 #fcfcfc #000000 #000000 0;
 #X obj 454 199 vradio 20 1 0 11 empty empty Key 0 -10 0 12 #ffffff #000000 #000000 0;
@@ -32,8 +32,8 @@
 #X obj 170 304 +;
 #X obj 170 328 +;
 #X floatatom 170 352 5 0 0 0 - - - 0;
-#X obj 609 237 organ~;
-#X msg 872 210 panic;
+#X obj 608 236 organ~;
+#X msg 919 213 panic;
 #X obj 106 395 pack 0 0;
 #X listbox 106 417 20 0 0 0 - - - 0;
 #X obj 609 449 my_leslie~;
@@ -52,8 +52,12 @@
 #X obj 295 156 - 10;
 #X msg 190 58 150;
 #X msg 233 60 7;
+#X obj 916 177 r startstop;
+#X obj 80 146 s startstop;
+#X obj 80 121 delay 50;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
+#X connect 1 0 51 0;
 #X connect 2 0 46 0;
 #X connect 2 0 0 1;
 #X connect 3 0 0 2;
@@ -89,3 +93,5 @@
 #X connect 46 0 37 0;
 #X connect 47 0 2 0;
 #X connect 48 0 3 0;
+#X connect 49 0 30 0;
+#X connect 51 0 50 0;
