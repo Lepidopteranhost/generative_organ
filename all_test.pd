@@ -1,0 +1,16 @@
+#N canvas 205 -16 1366 685 12;
+#X obj 35 11 run_notes;
+#X obj 317 13 chord_play;
+#X obj 830 32 organ~;
+#X obj 830 244 my_leslie~;
+#X obj 830 317 my_out~;
+#X obj 830 7 r organ_notes;
+#X obj 317 342 s organ_notes;
+#X obj 35 390 s organ_notes;
+#X msg 1143 32 panic;
+#X connect 0 0 7 0;
+#X connect 1 0 6 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 5 0 2 0;
+#X connect 8 0 2 1;
